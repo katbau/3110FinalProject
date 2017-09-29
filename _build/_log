@@ -1,0 +1,112 @@
+### Starting build.
+# Target: main.ml.depends, tags: { extension:ml, file:main.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules main.ml > main.ml.depends # cached
+# Target: game.ml.depends, tags: { extension:ml, file:game.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules game.ml > game.ml.depends
+# Target: ai.mli.depends, tags: { extension:mli, file:ai.mli, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules ai.mli > ai.mli.depends # cached
+# Target: card.mli.depends, tags: { extension:mli, file:card.mli, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules card.mli > card.mli.depends # cached
+# Target: card.cmi, tags: { byte, compile, extension:mli, file:card.mli, interf, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o card.cmi card.mli # cached
+# Target: player.mli.depends, tags: { extension:mli, file:player.mli, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules player.mli > player.mli.depends # cached
+# Target: territory.mli.depends, tags: { extension:mli, file:territory.mli, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules territory.mli > territory.mli.depends # cached
+# Target: territory.cmi, tags: { byte, compile, extension:mli, file:territory.mli, interf, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o territory.cmi territory.mli # cached
+# Target: player.cmi, tags: { byte, compile, extension:mli, file:player.mli, interf, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o player.cmi player.mli # cached
+# Target: risk_map.mli.depends, tags: { extension:mli, file:risk_map.mli, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules risk_map.mli > risk_map.mli.depends # cached
+# Target: risk_map.cmi, tags: { byte, compile, extension:mli, file:risk_map.mli, interf, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o risk_map.cmi risk_map.mli # cached
+# Target: ai.cmi, tags: { byte, compile, extension:mli, file:ai.mli, interf, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o ai.cmi ai.mli # cached
+# Target: deck.mli.depends, tags: { extension:mli, file:deck.mli, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules deck.mli > deck.mli.depends # cached
+# Target: deck.cmi, tags: { byte, compile, extension:mli, file:deck.mli, interf, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o deck.cmi deck.mli # cached
+# Target: dice.mli.depends, tags: { extension:mli, file:dice.mli, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules dice.mli > dice.mli.depends # cached
+# Target: dice.cmi, tags: { byte, compile, extension:mli, file:dice.mli, interf, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o dice.cmi dice.mli # cached
+# Target: risk_Gui.mli.depends, tags: { extension:mli, file:risk_Gui.mli, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules risk_Gui.mli > risk_Gui.mli.depends # cached
+# Target: risk_Gui.cmi, tags: { byte, compile, extension:mli, file:risk_Gui.mli, interf, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o risk_Gui.cmi risk_Gui.mli # cached
+# Target: game.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:game.cmo, file:game.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o game.cmo game.ml
++ /Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o game.cmo game.ml
+File "game.ml", line 84, characters 16-123:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+(_::_::_::_::_::_|_::_::_::[]|_::_::[]|_::[]|[])
+File "game.ml", line 207, characters 2-514:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+((_, _::_::_::_::_::_::_)::_|(_, _::_::_::_::[])::_|(_, _::_::_::[])::_|
+(_, _::_::[])::_|(_, _::[])::_|(_, [])::_)
+File "game.ml", line 261, characters 4-359:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+(_::_::_::_::_|_::_::[]|_::[])
+File "game.ml", line 329, characters 2-287:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+2
+File "game.ml", line 336, characters 2-1073:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+((0, 2)|(-1, 2)|(1, 2)|(2, _))
+File "game.ml", line 481, characters 23-43:
+Warning 10: this expression should have type unit.
+File "game.ml", line 479, characters 14-262:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+_::_::_
+File "game.ml", line 517, characters 23-43:
+Warning 10: this expression should have type unit.
+File "game.ml", line 515, characters 14-289:
+Warning 8: this pattern-matching is not exhaustive.
+Here is an example of a value that is not matched:
+_::_::_
+File "game.ml", line 654, characters 6-13:
+Warning 26: unused variable initocc.
+# Target: main.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o main.cmo main.ml # cached
+# Target: ai.ml.depends, tags: { extension:ml, file:ai.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules ai.ml > ai.ml.depends # cached
+# Target: ai.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ai.cmo, file:ai.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o ai.cmo ai.ml # cached
+# Target: card.ml.depends, tags: { extension:ml, file:card.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules card.ml > card.ml.depends # cached
+# Target: card.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:card.cmo, file:card.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o card.cmo card.ml # cached
+# Target: deck.ml.depends, tags: { extension:ml, file:deck.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules deck.ml > deck.ml.depends # cached
+# Target: deck.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:deck.cmo, file:deck.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o deck.cmo deck.ml # cached
+# Target: dice.ml.depends, tags: { extension:ml, file:dice.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules dice.ml > dice.ml.depends # cached
+# Target: dice.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:dice.cmo, file:dice.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o dice.cmo dice.ml # cached
+# Target: player.ml.depends, tags: { extension:ml, file:player.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules player.ml > player.ml.depends # cached
+# Target: player.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:player.cmo, file:player.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o player.cmo player.ml # cached
+# Target: risk_Gui.ml.depends, tags: { extension:ml, file:risk_Gui.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules risk_Gui.ml > risk_Gui.ml.depends # cached
+# Target: risk_Gui.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:risk_Gui.cmo, file:risk_Gui.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o risk_Gui.cmo risk_Gui.ml # cached
+# Target: risk_map.ml.depends, tags: { extension:ml, file:risk_map.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules risk_map.ml > risk_map.ml.depends # cached
+# Target: risk_map.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:risk_map.cmo, file:risk_map.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o risk_map.cmo risk_map.ml # cached
+# Target: territory.ml.depends, tags: { extension:ml, file:territory.ml, ocaml, ocamldep, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamldep.opt -modules territory.ml > territory.ml.depends # cached
+# Target: territory.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:territory.cmo, file:territory.ml, implem, ocaml, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -c -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson -o territory.cmo territory.ml # cached
+# Target: main.byte, tags: { byte, dont_link_with, extension:byte, file:main.byte, link, ocaml, program, quiet, traverse }
+/Users/snigdhak/.opam/4.03.0/bin/ocamlc.opt -I /Users/snigdhak/.opam/4.03.0/lib/ANSITerminal -I /Users/snigdhak/.opam/4.03.0/lib/biniou -I /Users/snigdhak/.opam/4.03.0/lib/bytes -I /Users/snigdhak/.opam/4.03.0/lib/camlimages -I /Users/snigdhak/.opam/4.03.0/lib/easy-format -I /Users/snigdhak/.opam/4.03.0/lib/oUnit -I /Users/snigdhak/.opam/4.03.0/lib/ocaml -I /Users/snigdhak/.opam/4.03.0/lib/yojson unix.cma oUnitAdvanced.cma oUnit.cma easy_format.cmo biniou.cma yojson.cmo str.cma ANSITerminal.cma camlimages_core.cma camlimages_png.cma graphics.cma camlimages_graphics.cma card.cmo territory.cmo player.cmo risk_map.cmo ai.cmo deck.cmo dice.cmo risk_Gui.cmo game.cmo main.cmo -o main.byte
+# Compilation successful.

@@ -1,0 +1,101 @@
+{
+
+"quads":[
+ {"name":"West Campus",
+  "territories":["Keeton House","Bethe House","Rose House","Becker House","Cook House"]},
+ {"name":"Central Campus",
+  "territories":["Uris Hall","PSB","Statler Hall","Barton Hall","Ives Hall"]},
+ {"name":"East Campus",
+  "territories":["Bailey Hall","Mudd Hall","Kennedy Hall","Teagle Hall","Comstock Hall"]},
+ {"name":"Engineering Quad",
+  "territories":["Duffield Hall","Gates Hall","Carpenter Hall","Thurston Hall","Hollister Hall"]},
+ {"name":"Arts Quad",
+  "territories":["Goldwin Smith Hall","Uris Library","Olin Library","Lincoln Hall","McGraw Hall"]},
+ {"name":"Ho PLaza",
+  "territories":["Willard Straight Hall","Gannett","Cornell Store","Olin Hall","Sage Hall"]}
+],
+
+
+"territories":[
+
+{"name":"Keeton House",
+ "adjacent":["Keeton House","Bethe House","Rose House","Becker House"]},
+{"name":"Bethe House",
+ "adjacent":["Keeton House","Bethe House","Rose House","Becker House","Willard Straight Hall", "Uris Library"]},
+{"name":"Rose House",
+ "adjacent":["Keeton House","Bethe House","Rose House","Becker House","Uris Library"]},
+{"name":"Becker House",
+ "adjacent":["Keeton House","Bethe House","Rose House","Becker House","Cook House","McGraw Hall"]},
+{"name":"Cook House",
+ "adjacent":["Becker House","Cook House","McGraw Hall"]},
+
+{"name":"Uris Hall",
+ "adjacent":["Uris Hall","PSB","Statler Hall","Ives Hall","Cornell Store","Olin Library"]},
+{"name":"PSB",
+ "adjacent":["Uris Hall","PSB","Lincoln Hall","Goldwin Smith Hall","Bailey Hall"]},
+{"name":"Statler Hall",
+ "adjacent":["Uris Hall","Statler Hall","Barton Hall","Ives Hall","Sage Hall","Duffield Hall","Gates Hall"]},
+{"name":"Barton Hall",
+ "adjacent":["Statler Hall","Barton Hall","Ives Hall","Gates Hall","Comstock Hall","Teagle Hall"]},
+{"name":"Ives Hall",
+ "adjacent":["Uris Hall","Statler Hall","Barton Hall","Ives Hall","Mudd Hall","Comstock Hall"]},
+
+{"name":"Bailey Hall",
+ "adjacent":["Bailey Hall","Kennedy Hall","PSB"]},
+{"name":"Mudd Hall",
+ "adjacent":["Mudd Hall","Kennedy Hall","Comstock Hall","Ives Hall"]},
+{"name":"Kennedy Hall",
+ "adjacent":["Bailey Hall","Mudd Hall","Kennedy Hall"]},
+{"name":"Teagle Hall",
+ "adjacent":["Teagle Hall","Comstock Hall","Barton Hall","Gates Hall"]},
+{"name":"Comstock Hall",
+ "adjacent":["Mudd Hall","Teagle Hall","Comstock Hall","Barton Hall","Ives Hall"]},
+
+{"name":"Duffield Hall",
+ "adjacent":["Duffield Hall","Gates Hall","Carpenter Hall","Thurston Hall","Statler Hall","Sage Hall"]},
+{"name":"Gates Hall",
+ "adjacent":["Duffield Hall","Gates Hall","Sage Hall","Barton Hall","Teagle Hall"]},
+{"name":"Carpenter Hall",
+ "adjacent":["Duffield Hall","Carpenter Hall","Thurston Hall","Hollister Hall","Olin Hall","Gannett"]},
+{"name":"Thurston Hall",
+ "adjacent":["Duffield Hall","Carpenter Hall","Thurston Hall","Hollister Hall"]},
+{"name":"Hollister Hall",
+ "adjacent":["Carpenter Hall","Thurston Hall","Hollister Hall"]},
+
+{"name":"Goldwin Smith Hall",
+ "adjacent":["Goldwin Smith Hall","Lincoln Hall","Olin Library","McGraw Hall","PSB"]},
+{"name":"Uris Library",
+ "adjacent":["Uris Library","Olin Library","McGraw Hall","Bethe House","Rose House"]},
+{"name":"Lincoln Hall",
+ "adjacent":["Goldwin Smith Hall","Lincoln Hall","McGraw Hall","PSB"]},
+{"name":"McGraw Hall",
+ "adjacent":["Goldwin Smith Hall","Uris Library","Lincoln Hall","McGraw Hall","Cook House","Becker House"]},
+{"name":"Olin Library",
+ "adjacent":["Goldwin Smith Hall","Uris Library","Olin Library","Cornell Store","Uris Hall"]},
+
+{"name":"Willard Straight Hall",
+ "adjacent":["Willard Straight Hall","Gannett","Cornell Store","Olin Hall","Bethe House"]},
+{"name":"Gannett",
+ "adjacent":["Willard Straight Hall","Gannett","Cornell Store","Olin Hall","Carpenter Hall"]},
+{"name":"Cornell Store",
+ "adjacent":["Willard Straight Hall","Gannett","Cornell Store","Olin Hall","Sage Hall","Olin Library","Uris Library","Uris Hall"]},
+{"name":"Olin Hall",
+ "adjacent":["Willard Straight Hall","Gannett","Cornell Store","Olin Hall","Sage Hall","Carpenter Hall"]},
+{"name":"Sage Hall",
+ "adjacent":["Cornell Store","Olin Hall","Sage Hall","Statler Hall","Duffield Hall"]}
+],
+
+
+"cards":[
+{"name":"Keeton House","rank":"0"},{"name":"Bethe House","rank":"1"},{"name":"Rose House","rank":"2"},
+{"name":"Becker House","rank":"0"},{"name":"Cook House","rank":"1"},{"name":"Uris Hall","rank":"2"},
+{"name":"PSB","rank":"0"},{"name":"Statler Hall","rank":"1"},{"name":"Ives Hall","rank":"2"},
+{"name":"Bailey Hall","rank":"0"},{"name":"Mudd Hall","rank":"1"},{"name":"Kennedy Hall","rank":"2"},
+{"name":"Teagle Hall","rank":"0"},{"name":"Comstock Hall","rank":"1"},{"name":"Duffield Hall","rank":"2"},
+{"name":"Gates Hall","rank":"0"},{"name":"Carpenter Hall","rank":"1"},{"name":"Thurston Hall","rank":"2"},
+{"name":"Hollister Hall","rank":"0"},{"name":"Goldwin Smith Hall","rank":"1"},{"name":"Uris Library","rank":"2"},
+{"name":"Olin Library","rank":"0"},{"name":"Lincoln Hall","rank":"1"},{"name":"McGraw Hall","rank":"2"},
+{"name":"Willard Straight Hall","rank":"0"},{"name":"Gannett","rank":"1"},{"name":"Cornell Store","rank":"2"},
+{"name":"Sage Hall","rank":"0"},{"name":"Barton Hall","rank":"1"},{"name":"Olin Hall","rank":"2"}
+]
+}

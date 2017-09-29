@@ -1,0 +1,298 @@
+  open_graph " 800x600";
+
+          (* map *)
+
+  set_line_width 0;
+  set_color (rgb 28 153 60);
+  fill_rect 0 0 800 600;
+  set_color black;
+  draw_rect 601 0 199 600;
+  draw_rect 0 477 600 123;
+
+
+        (* side bars*)
+
+  let purple = rgb 205  83 220
+  and green' = rgb  50 200 50 in
+
+
+  (* colors top and side*)
+
+  set_color red;
+  fill_rect 601 0 199 600;
+  fill_rect 0 477 600 123;
+
+
+  (* makes player box outlines *)
+
+  set_color black;
+  draw_rect  19 544 127 37;
+  draw_rect 164 544 127 37;
+  draw_rect 309 544 127 37;
+  draw_rect 454 544 127 37;
+
+  draw_rect 619 544 162 37;
+  draw_rect 618 543 164 39;
+  draw_rect 0 0 600 476;
+  draw_rect 0 0 800 600;
+
+
+  (* makes player boxes *)
+
+  set_color blue;
+  fill_rect 20 545 125 35;
+  set_color green;
+  fill_rect 165 545 125 35;
+  set_color cyan;
+  fill_rect 310 545 125 35;
+  set_color magenta;
+  fill_rect 455 545 125 35;
+
+
+  (* makes "Occupy Cornell" box *)
+
+  set_color (rgb 215 215 215);
+  fill_rect 620 545 160 35;
+
+
+  (* draws player name and title *)
+
+  set_color black;
+  moveto  58 557;
+  draw_string "PLAYER 1";
+  moveto 203 557;
+  draw_string "PLAYER 2";
+  moveto 348 557;
+  draw_string "PLAYER 3";
+  moveto 493 557;
+  draw_string "PLAYER 4";
+  moveto 658 555;
+  draw_string "OCCUPY CORNELL";
+
+
+  (* dividing lines*)
+
+  draw_rect 606 275 186 0;
+  draw_rect 606 347 186 0;
+  draw_rect 606 419 186 0;
+  draw_rect 606 119 186 0;
+
+
+  (* function that draws large number at x' y'*)
+
+  let drawnum x' y' num_coords num =
+    let coords = List.assoc num num_coords in
+    let rec draw = function
+    | [] -> ()
+    | (x,y,w,h)::t -> fill_rect(x+x') (y+y') w h; draw t
+    in draw coords in
+
+  (* instructions for making numbers *)
+  let num_coords = [(0,[(0,0,12,2);(10,2,2,24);(0,2,2,24);(2,24,10,2)]);
+                    (1,[(1,0,10,2);(5,2,2,22);(2,24,5,2)]);
+                    (2,[(0,0,12,2);(0,2,2,10);(0,12,12,2);(10,14,2,10);(0,24,12,2)]);
+                    (3,[(0,0,12,2);(10,2,2,10);(2,12,10,2);(10,14,2,10);(0,24,12,2)]);
+                    (4,[(10,0,2,26);(0,12,12,2);(0,14,2,12)]);
+                    (5,[(0,0,12,2);(10,2,2,10);(0,12,12,2);(0,14,2,10);(0,24,12,2)]);
+                    (6,[(0,0,12,2);(10,2,2,10);(0,12,12,2);(0,0,2,24);(0,24,12,2)]);
+                    (7,[(10,0,2,24);(0,24,12,2)]);
+                    (8,[(0,0,12,2);(10,2,2,24);(0,12,12,2);(0,0,2,24);(0,24,12,2)]);
+                    (9,[(10,0,2,24);(0,12,12,2);(0,14,2,10);(0,24,12,2)])] in
+
+
+  (* draws highlights *)
+
+  let rec draw x' y' = function
+  | [] -> ()
+  | (x,y,w,h)::t -> fill_rect (x+x') (y+y') w h; draw x' y' t in
+
+  (* highlights Reinforce*)
+  let highlight1 = [(0,0,190,5);(0,5,5,100);(185,5,5,100);(0,105,190,5)] in
+
+  (* highlights Attack and Fortify *)
+  let highlight2 = [(0,0,190,4);(0,4,4,56);(186,4,4,56);(0,56,190,4)] in
+
+  (*player turn highlight*)
+  let highlightpl = [(0,0,139,5);(0,44,139,5);(0,5,5,39);(134,5,5,39)] in
+
+
+
+  (* draws highlights *)
+
+  set_color white;
+  draw 605 281 highlight2;
+  set_color red;
+  draw 605 353 highlight2;
+  draw 605 405 highlight1;
+
+
+  draw  13 538 highlightpl;
+  draw 158 538 highlightpl;
+  set_color white;
+  draw 303 538 highlightpl;
+  set_color red;
+  draw 448 538 highlightpl;
+
+  set_color black;
+
+
+  (* draws string at x y without changing current location *)
+
+  let draw_spec_string x y str =
+    let xold = current_x () in
+    let yold = current_y () in
+    moveto x y;
+    draw_string str;
+    moveto xold yold in
+
+
+  (* colors game state boxes light gray*)
+
+  set_color (rgb 215 215 215);
+  fill_rect 669 497 60 17;
+  fill_rect 678 385 42 17;
+  fill_rect 675 313 48 17;
+  set_color black;
+
+  (* box borders *)
+  draw_rect 668 496 62 19;
+  draw_rect 677 384 44 19;
+  draw_rect 674 312 50 19;
+
+  draw_spec_string 673 499 "REINFORCE";
+  draw_spec_string 682 387 "ATTACK";
+  draw_spec_string 643 365 "Attack your enemies";
+  draw_spec_string 679 315 "FORTIFY";
+  draw_spec_string 628 293 "Fortify your territories";
+
+  draw_spec_string 658 435 "REMAINING TA'S";
+  drawnum 683 455 num_coords 0;
+  drawnum 705 455 num_coords 0;
+
+
+
+             (*Dice*)
+
+  draw_spec_string 610 252 "ATTACKER";
+  draw_spec_string 610 179 "DEFENDER";
+  draw_spec_string 610  98 "CARDS";
+
+
+  (* draws dice body*)
+
+  set_color white;
+  fill_rect 620 202 36 36;
+  fill_rect 680 202 36 36;
+  fill_rect 740 202 36 36;
+
+  fill_rect 620 132 36 36;
+  fill_rect 680 132 36 36;
+
+
+  (* draws dice outline*)
+
+  set_color black;
+  draw_rect 619 201 38 38;
+  draw_rect 679 201 38 38;
+  draw_rect 739 201 38 38;
+
+  draw_rect 619 131 38 38;
+  draw_rect 679 131 38 38;
+
+  let dice_dots =
+    [(1,[(16,15)]);
+     (2,[(5,26);(27,4)]);
+     (3,[(16,15);(5,26);(27,4)]);
+     (4,[(5,26);(27,4);(5,4);(27,26)]);
+     (5,[(16,15);(5,26);(27,4);(5,4);(27,26)]);
+     (6,[(5,26);(27,4);(5,4);(27,26);(5,15);(27,15)])] in
+
+  let die x y num lst =
+    let patt = List.assoc num lst in
+    let rec draw_dot = function
+    | [] -> ()
+    | (a,b)::t -> draw_rect x y 38 38; fill_rect (a+x) (b+y) 6 6; draw_dot t
+    in draw_dot patt in
+
+
+  (* changes die values *)
+
+  die 620 202 3 dice_dots;
+  die 680 202 4 dice_dots;
+  die 740 202 2 dice_dots;
+  die 620 132 6 dice_dots;
+  die 680 132 5 dice_dots;
+
+
+  (* draws card outlines *)
+
+  draw_rect 650 65 30 45;
+  draw_rect 700 65 30 45;
+  draw_rect 750 65 30 45;
+
+  draw_rect 650 10 30 45;
+  draw_rect 700 10 30 45;
+  draw_rect 750 10 30 45;
+
+  (* fills cards *)
+
+  set_color (rgb 255 204 153);
+  fill_rect 651 66 28 43;
+  fill_rect 701 66 28 43;
+  fill_rect 751 66 28 43;
+
+  fill_rect 651 11 28 43;
+  fill_rect 701 11 28 43;
+  fill_rect 751 11 28 43;
+
+  set_color black;
+
+  let draw_card x y terr_name rank =
+    draw_spec_string (x+3) (y+25) terr_name;
+    match rank with
+    | 0 -> draw_spec_string (x+12) (y+7) "I";
+    | 1 -> draw_spec_string (x+9) (y+7) "II";
+    | 2 -> draw_spec_string (x+6) (y+7) "III";
+    | _ -> ()
+  in
+
+  draw_card 651 66 "ROSE" 0;
+  draw_card 701 66 "WARR" 1;
+  draw_card 751 66 "DUFF" 2;
+
+  draw_card 651 11 "CARP" 2;
+  draw_card 701 11 "OLIN" 1;
+  draw_card 751 11 "GANN" 0;
+
+  (* cross out*)
+
+  let cross_out_player  pl =
+      set_line_width 3;
+      match pl with
+      | 1 -> moveto 21 546;
+             lineto 144 579;
+             moveto 21 579;
+             lineto 144 546
+
+      | 2 -> moveto 166 546;
+             lineto 289 579;
+             moveto 166 579;
+             lineto 289 546
+
+      | 3 -> moveto 311 546;
+             lineto 434 579;
+             moveto 311 579;
+             lineto 434 546
+
+      | 4 -> moveto 456 546;
+             lineto 579 579;
+             moveto 456 579;
+             lineto 579 546
+      | _ -> ();
+      set_line_width 0;
+  in
+
+  cross_out_player 1;
+  cross_out_player 2;
+  cross_out_player 3;
+  cross_out_player 4;

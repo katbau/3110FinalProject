@@ -1,0 +1,15 @@
+main:
+	ocamlbuild -pkgs yojson risk_map.byte deck.byte
+	ocamlbuild -r -pkgs yojson risk_map.cmo
+	ocamlbuild -pkgs yojson territory.cmo
+	ocamlbuild -pkgs yojson player.cmo
+	ocamlbuild -pkgs yojson card.cmo
+	ocamlbuild -r -pkgs yojson deck.cmo
+	ocamlbuild -r -pkgs yojson ai.cmo
+	ocamlbuild  dice.cmo
+	ocamlbuild game.ml
+	ocaml
+clean:
+	ocamlbuild -clean
+play:
+	ocamlbuild -r -pkgs oUnit,yojson,str,ANSITerminal main.byte && ./main.byte
